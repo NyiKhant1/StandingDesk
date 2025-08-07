@@ -1,0 +1,1731 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body
+{
+    background-color: white;  
+}
+/* header */
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(227, 227, 227);
+    position: fixed;    
+    top: 0pc;
+    right: 0px;
+    left: 0px;   
+    z-index: 1000;
+}
+
+
+
+.logo img
+{
+    display: flex;
+    width: 65px ;
+}
+.logo
+{
+    margin-left: 30px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.divcart button
+{
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: none;
+    background-color: transparent;
+    border-radius: 40px;
+}
+
+.link ul
+{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+}
+
+
+.link ul li a
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+}
+.link  li ul
+{
+    list-style: none;
+    display: none;
+    position: absolute;
+    background-color: rgba(248, 248, 248);
+    width: 200px;
+    transition: 0.15s;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.link  li:hover>ul
+{
+    cursor: pointer;
+    display: block;
+    transition: 0.15s;
+}
+.link  li ul li 
+{
+    padding-top: 9px;
+}
+
+.link a:hover
+{
+    opacity: 0.7;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+/* Nav Bar Pop Up */
+.menu
+{
+    display: none;
+}
+@media (max-width: 647px)
+{
+    .menu
+    {
+        display: block;
+    }
+    .link
+    {
+        display: none;
+    }
+}
+
+.divmenu:hover 
+{
+    opacity: 0.7;
+    transition: 0.15s ;
+    
+}
+.ImgMenu
+{
+    width: 30px;
+}
+
+.PopUpLink a
+{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+   text-decoration: none; 
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+.PopUpLink ul
+{
+    list-style: none;
+
+}
+.PopUpLink li  :hover
+{   
+    cursor: pointer;
+    text-decoration: underline;
+    transition: 0.15s;
+    opacity: 0.7;
+}
+.MenuModel
+{
+    z-index: 1000;
+    position: fixed;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.MenuModel:target {
+    display: table;
+    position: absolute;
+}
+.MenuModelDialog {
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    right: 0px;
+    width: 100%;
+}
+.MenuContent a
+{
+    align-items: center;
+}
+.MenuModelDialog .MenuContent 
+{
+    border-radius: 20px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    background-color: rgb(105, 94, 86);
+    padding: 0;
+    outline: 0;
+    text-align: justify;
+    width: 225px;
+    height: 100%;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    margin-right: 0px;
+    animation-name:MenuModel-menuPopUp;
+    animation-duration: 0.7s;
+    -webkit-animation-name:MenuModel-menuPopUp;
+    -webkit-animation-duration: 0.7s;
+    transition: 0.5s;
+    padding: 20px;
+}
+@keyframes MenuModel-menuPopUp {
+    from {
+        right: -100px;
+        
+    }
+    to {
+        right: 0px;
+        
+    }   
+}
+
+@-webkit-keyframes MenuModel-menuPopUp{
+    from {
+        right: -100px;
+        
+    }
+    to {
+        right: 0px;
+    }
+}
+.MenuClose 
+{
+    float: right;
+    width: 30px;
+}
+.MenuClose:hover
+{
+    cursor:pointer;
+    opacity: 0.7;
+}
+/* Contact US */
+.Contact
+{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(IMAGE/standingdesk.webp);
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.container
+{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.676);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.Information 
+{   
+    background-color:rgb(188, 184, 177) ;
+    width: 700px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    color: rgb(70, 63, 58);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.mapAndContact
+{
+    margin: 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.mapAndContact iframe
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.map
+{   
+    border-radius: 50px;
+    width: 450px;
+    height: 350px;
+    border: 0;
+}
+@media(max-width:654px)
+{
+    .map{
+        width: 300px;
+        height: 350px;
+    }
+}
+
+.Contact-Form
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+    
+}
+form
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.form-heading
+{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}   
+.ContactInput 
+{
+    outline: none;
+    margin-top: 15px;
+    width:300px ;
+    height: 50px;
+    padding: 10px 20px;
+    border: 0;
+    outline-color: #000000fa;
+    background-color: rgb(244, 243, 238);
+    color: rgb(70, 63, 58);
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-box-shadow: 0px 29px 61px -19px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 29px 61px -19px rgba(0,0,0,0.75);
+    box-shadow: 0px 29px 61px -19px rgba(0,0,0,0.75);
+    font-size: 13px;
+
+}
+
+.btnSubmit
+{
+    margin-bottom: 30px;
+    font-size: 13px;
+    margin-top: 15px;
+    width:300px ;
+    height: 50px;
+    border-radius: 30px 141px 30px 141px;
+-moz-border-radius: 30px 141px 30px 141px;
+-webkit-border-radius: 30px 141px 30px 141px;
+border: 0px solid #000000;
+    border: 0;
+    color: rgb(70, 63, 58);
+    background-color: rgb(224, 175, 160);
+    --webkit-box-shadow: 0px 29px 61px -19px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 29px 61px -19px rgba(0,0,0,0.75);
+    box-shadow: 0px 29px 61px -19px rgba(0,0,0,0.75);
+}
+.Form button:hover
+{
+
+    cursor: pointer;
+    transition: 0.2s;
+    opacity: 0.7;
+}
+.contactgrid
+{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    left: 0px;
+    right: 0px;
+    background-color: rgb(70, 63, 58);  
+
+}
+
+.phone img
+{
+    display: block;
+
+    width: 25px;
+}
+.email img
+{
+    display: block;
+    width: 25px;
+}
+.email p
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+}
+.phone p
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+
+}
+.email
+{
+    margin-top: 15px;
+    display: flex;
+}
+.phone
+{
+    display: flex;
+    margin-top: 15px;
+}
+/* Cart Pop Up*/
+.shoppingcart img
+{
+    width: 100px;
+}
+.divcart
+{
+    margin-right: 30px;
+    left: 0px;
+}
+.divcart :hover 
+{
+    opacity: 0.7;
+    transition: 0.15s ;
+}
+.cart
+{
+    width: 30px;
+}
+.shoppingcart
+{
+    background-color: black;
+}
+.btnGoYourCart 
+{
+    position: fixed;
+    width: 400px;
+    bottom: 0px;
+    height: 50px;
+    margin-top: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(70, 63, 58);
+}
+.btnAddToCart a :hover
+{
+    text-decoration: underline;
+    transition: 0.15s;
+}
+.btnGoYourCart a
+{
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+.Model {
+    position: fixed;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 70%;
+    background-color: rgba(168, 166, 166);
+    display: none;
+    z-index: 1000;
+
+}
+
+.Model:target {
+    display: table;
+    position: absolute;
+}
+
+.ModelDIalog {
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    right: 0px;
+}
+
+.ModelDIalog .modelContent {
+    position: fixed;
+    color: black;
+    background-color: rgb(248, 248, 248);
+    outline: 0;
+    text-align: justify;
+    width: 400px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    margin-right: 0px;
+    animation-name: Model-PopUp;
+    animation-duration: 0.5s;
+    -webkit-animation-name: Model-PopUp;
+    -webkit-animation-duration: 0.5s;
+}
+
+@keyframes Model-PopUp {
+    from {
+        right: -100px;
+       
+    }
+    to {
+        right: 0px;
+    }   
+}
+
+@-webkit-keyframes Model-PopUp {
+    from {
+        right: -100px;
+        
+    }
+    to {
+        right: 0px;
+    }
+}
+.DivCloseButton
+{
+    right: 0px;
+    float: right;
+    width: 30px;
+}
+
+.DivCloseButton:hover
+{
+    cursor:pointer;
+    opacity: 0.7;
+}
+.CartHeading p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(70, 63, 58);
+    font-size: 27px;
+    font-weight: bolder;
+    margin-left: 35px;
+}
+.CartHeading
+{
+    margin-top: 5px;
+    display: flex;
+    justify-content: start;
+}
+.quantityconainter
+{
+    width: 260.94px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+@media (max-width:584px)
+{
+    .ModelDIalog .modelContent 
+    {
+        width: 300px;
+        transition: 0.15s;
+    }
+    .divUrcart
+    {
+        flex-direction: column;
+        transition: 0.15s;
+
+    }
+    .quantityconainter
+    {
+        flex-direction: column;
+        transition: 0.15s;
+
+    }
+    .btnGoYourCart
+    {
+        width: 300px;
+        transition: 0.15s;
+    }
+}
+.cartcontainer
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    flex-direction: column;
+}
+.urcart img
+{
+    width: 150px;
+    border-radius: 20px;
+}
+.divUrcart
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.PurchaseDetail p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin: 15px;
+}
+.PurchaseDetail
+{
+    vertical-align: top;
+    width: 200px;
+}
+
+.divPlusMinus
+{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.plus
+{
+    margin-left: 5px;
+}
+
+.plus img
+{
+    width: 30px;
+}
+.plus :hover
+{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.minus :hover
+{
+    cursor: pointer;
+    opacity: 0.7;
+
+}
+.minus img
+{
+    width: 30px;
+}
+.Price
+{
+    margin-left: 15px;
+}
+.Price p
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.quantity 
+{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/* Rising Desk */
+.SearchContainer
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.653);
+
+}
+.searchBox  input
+{
+    background-color: rgb(238, 238, 238);
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: all 0.8s;}
+.searchBox 
+{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    align-items: center;
+    border-style: solid;
+    border-color: black;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 30px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(238, 238, 238);
+}
+.searchBox  img 
+{
+    padding-right: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchBox ::placeholder
+{
+    font-size: 15px;
+}   
+.searchBox:hover input
+{
+    width: 230px;
+}
+.itemimg img
+{
+    width: 100%;
+}
+.GMdesk img
+{
+    width: 200px;
+    height: 170px;
+}
+.itemimg,.GMdesk
+{
+    display: flex;
+    justify-content: center;    
+    width: 250px;
+    height: 170px;
+
+}
+
+.productinfo
+{
+    height: 61.33px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    align-items: center;
+   
+}   
+.productinfo :hover
+{
+    text-decoration: underline;
+    transition: 0.15s;
+}
+.ProductPrice
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    color:  rgb(70, 63, 58);
+    font-size: 18px;
+}
+.ProductPrice span
+{
+    color: #999;
+    text-decoration: line-through;
+}
+
+.productinfo a
+{
+    text-decoration: none;
+    color:  rgb(70, 63, 58);
+    font-size: 20px;
+    margin-top: 10px;
+}
+.item 
+{
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 325px;
+    background-color: white;
+    box-shadow: 0px 0px 49px 6px rgb(227, 227, 227);}
+.item:hover
+{
+    cursor: pointer;
+   transform: translateY(-10px);
+    box-shadow: 0px 0px 52px 15px rgba(235,235,235,1);
+    opacity: 0.9; 
+    transition: 0.3s;
+}
+.shop
+{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 50px;
+    background-color: white;
+}
+.btnAddToCart
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+ 
+}
+/* Cart Page */
+.cartdetailContainer
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.btnAddToCart button
+{
+    width: 250px;
+    height: 45px;
+    background-color: rgb(70, 63, 58);
+    border-style: solid;
+    border-color:rgb(70, 63, 58); 
+    color:  rgba(248, 248, 248);   
+    font-size:medium;
+    font-weight: bold;
+}
+.btnAddToCart :hover
+{
+    opacity: 0.7;
+    transition: 0.15s;
+    cursor: pointer;
+}
+.Yourpurchase
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    width: 250px;
+    height: 150px;
+}
+.Yourpurchase img
+{
+    border-radius: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.YourCart
+{
+    margin-top: 45px;
+    display: flex;
+}
+
+
+.YourCartHeader
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+}
+
+
+
+.CartDetail
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+    background-color: rgb(227, 227, 227);
+    margin-top: 20px;
+    border-radius: 30px;
+    padding: 20px;
+}   
+@media (max-width:645px)
+{
+    .CartDetail
+    {
+       flex-direction: column;
+    }
+}
+
+.btnRemove
+{
+    margin-top: 5px;
+}
+.btnRemove  img
+{
+    width: 30px;
+    display: flex;
+    align-items: start;
+}   
+
+.btnRemove button
+{
+    margin-bottom: 0px;
+    width:40px;
+    border-radius: 20px;
+    height: 30px;
+    border-style: none;
+    background-color: transparent;
+}
+.btnRemove :hover
+{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.divpurchaseinfo
+{
+    display: flex;
+}
+.purchasecontainer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:300px;
+}
+.PurchaseProductInfoDetail
+{
+    margin-left: 10px;
+}
+
+.PurchaseProductInfo p ,.PurchaseProductInfoDetail p
+{   
+    padding-top: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: black;
+}
+.ProductName
+{
+    font-size: 20px;
+    color: black;
+}
+.checkout 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+.checkoutdetail
+{
+    margin-top: 20px;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(227, 227, 227);
+    border-radius: 30px;
+    width: fit-content;
+    padding: 25px;
+}   
+
+.costdetail 
+{
+    display: flex;
+}
+.leftside
+{
+    justify-content: end;
+}
+.rightside
+{
+    margin-left: 20px;
+}
+.leftside div, .rightside div
+{
+    padding-top: 15px;
+
+}
+.creditcard ::placeholder
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+.creditcard input
+{
+    border-radius: 20px;
+    outline: none;
+    border-style: none;
+    height: 30px;
+    padding-left: 10px;
+}
+.rightside , .leftside
+{
+    align-items: center;
+    justify-content: center;
+}
+.BtnCheckOut
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100% ;
+    margin-top: 15px;
+    outline: none;
+    border-style: none;
+}
+.BtnCheckOut button
+{
+    width: 100%;
+    height: 35px;
+    background-color: rgb(70, 63, 58);
+    border-radius: 20px;
+    outline: none;
+    border-style: none;
+    color: white;
+}
+.BtnCheckOut :hover
+{
+    cursor: pointer;
+    opacity: 0.7;
+    background-color: white;
+    color: rgb(70, 63, 58) ;
+    transition: 0.3s;
+}
+@media (max-width:1087px)
+{
+    .YourCart
+    {
+        flex-direction: column;
+    }
+    .divpurchasedetail
+    {
+        justify-content: center;
+    }
+}
+
+/* heatlhbenefit */
+.homepageheader
+{
+    margin-top: 45px;
+}
+.homepageheader p
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    color: rgb(70, 63, 58) ;
+
+}
+.benefitcontainer
+{
+    background-image: url(IMAGE/background.webp);
+    display: flex;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    left: 0px;
+    right: 0px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    background-size: cover;
+
+}
+.benefitCategory
+{
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    height: 300px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.benefitCategory h1
+{
+    color:rgb(209, 209, 209);
+    font-size: 55px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.benefitCategory p
+{
+    color: whitesmoke;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+}
+.benefittext
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+    background-color:  rgb(70, 63, 58);
+    color: whitesmoke;
+    flex-wrap: wrap;
+}
+.benefittext p
+{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 25px;
+    font-size: 20px;
+}
+.divBenefitLeft
+{
+    display: flex;
+    flex-direction: row;
+}
+.divBenefitRight
+{
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width:838px)
+{   
+    .divBenefitLeft
+    {
+        flex-direction: column;
+    }
+    .divBenefitRight
+    {
+        flex-direction: column-reverse;
+    }
+}
+@media (max-width:425px)
+{   
+    .benefittext p
+    {
+        font-size: 15px;
+        transition: 0.15s;
+    }
+    .benefitCategory p
+    {
+        font-size:25px;
+        transition: 0.15s;
+    }
+}
+.Audio
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+/* Home Page */
+.homepagecard
+{
+    background-image: url(IMAGE/gallery-7-UPLIFT-Bamboo-Standing-Desk__41304.jpg);
+    margin-top: 35px;
+    width: 100%;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.quote
+{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 35px;
+}
+.quote p
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.HomePageContainer
+{
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.557);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.PopUpButtonContainer
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.diveco img, .divshipping img, .divDesign img
+{
+    width: 50px;
+}
+.diveco, .divshipping, .divDesign
+{
+    background-color: white;
+    margin-left: 20px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    margin-top: 90px;
+    opacity: 0.7;
+}
+.diveco :hover
+{
+    opacity: 0.7;
+    transition: 0.3s;
+}
+.divshipping :hover
+{
+    opacity: 0.7;
+    transition: 0.3s;
+}
+.divDesign :hover
+{
+    opacity: 0.7;
+    transition: 0.3s;
+}
+@media (max-width:376px)
+{
+    .diveco, .divshipping, .divDesign
+    {
+        width: 70px;
+        transition: 0.15s;
+    }
+    .diveco img, .divshipping img, .divDesign img
+    {
+        width: 30px;
+    }
+    .quote p 
+    {
+        font-size: 25px;
+        transition: 0.15s;
+    }
+}
+.salesimg img
+{
+    width: 250px;
+    height: 166.67px;
+}
+.salesimg
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.salesinfo
+{
+    height: 61.33px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.salesinfo :hover
+{  
+    text-decoration: underline;
+    transition: 0.15s;
+}
+
+.salesinfo a
+{
+    text-decoration: none;
+    color:  rgb(70, 63, 58);
+    font-size: 20px;
+    margin-top: 10px;
+}
+.salesprice
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    color:  rgb(70, 63, 58);
+    font-size: 18px;
+}
+.salesprice span
+{
+    color: #999;
+    text-decoration: line-through;
+}
+.salesitem 
+{
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 325px;
+    background-color: white;
+    box-shadow: 0px 10px 19px 0px rgba(0, 0, 0, 0.164);
+}   
+.salescard
+{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 50px;
+    background-color: white;
+}
+.SpeicalOffers
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.SpeicalOffers p 
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+}
+.homepageBtnClose
+{
+    float: right;
+    width: 30px;
+}
+.homepageBtnClose:hover
+{
+    cursor:pointer;
+    opacity: 0.7;
+}
+
+.EcoModel {
+    position: fixed;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(168, 166, 166, 0.135);
+    display: none;
+}
+
+.EcoModel:target {
+    display: table;
+    position: absolute;
+}
+
+.ecoModelDIalog {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.ecoModelDIalog .EcomodelContent {
+    border-radius: 30px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    background-color: rgba(54, 54, 54, 0.788);
+    opacity: 0.99;
+    padding: 20px;
+    outline: 0;
+    text-align: justify;
+    width: 80%;
+    margin: auto;
+    animation-name: EcoModel-EcoPopUp;
+    animation-duration: 0.5s;
+    -webkit-animation-name: EcoModel-EcoPopUp;
+    -webkit-animation-duration: 0.5s;
+    transition: 0.5s;
+}
+.EcomodelContent h2, .ShippingmodelContent h2, .DesignmodelContent h2
+{
+    margin-bottom: 20px;
+}
+@keyframes EcoModel-EcoPopUp {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+
+
+.ShippingModel {
+    position: fixed;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(168, 166, 166, 0.135);
+    display: none;
+}
+
+.ShippingModel:target {
+    display: table;
+    position: absolute;
+}
+.ShippingModelModelDIalog {
+    display: table-cell;
+    vertical-align: middle;
+}
+.ShippingModelModelDIalog .ShippingmodelContent {
+    border-radius: 30px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    background-color: rgba(54, 54, 54, 0.788);
+    opacity: 0.99;
+    padding: 20px;
+    outline: 0;
+    text-align: justify;
+    width: 80%;
+    margin: auto;
+    animation-name: ShippingModel-ShippingPopUp;
+    animation-duration: 0.5s;
+    -webkit-animation-name: ShippingModel-ShippingPopUp;
+    -webkit-animation-duration: 0.5s;
+    transition: 0.5s;
+}
+
+@keyframes ShippingModel-ShippingPopUp {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+.DesignModel {
+    position: fixed;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(168, 166, 166, 0.135);
+    display: none;
+}
+
+.DesignModel:target {
+    display: table;
+    position: absolute;
+}
+.DesignModelModelDIalog {
+    display: table-cell;
+    vertical-align: middle;
+}
+.DesignModelModelDIalog .DesignmodelContent {
+    border-radius: 30px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    background-color: rgba(54, 54, 54, 0.788);
+    opacity: 0.99;
+    padding: 20px;
+    outline: 0;
+    text-align: justify;
+    width: 80%;
+    margin: auto;
+    animation-name: DesignModel-DesignPopUp;
+    animation-duration: 0.5s;
+    -webkit-animation-name: DesignModel-DesignPopUp;
+    -webkit-animation-duration: 0.5s;
+    transition: 0.5s;
+}
+@keyframes DesignModel-DesignPopUp {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+
+/* Slide Show */
+.slideshowcontainer
+{
+    margin-top: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.divslide
+{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+.slideshow img
+{
+    width: 420px;
+    height: 400px;
+    padding: 10px;
+}
+.slideshow
+{
+    width: 100%;
+    display: flex;
+    animation: slideshow 16s infinite;
+}
+@keyframes slideshow
+{
+
+    0%
+    {
+        /* bar mha ma lok tayy tae condition */
+        transform: translateX(0%);
+    }
+    25%
+    {
+        /* loading  */
+        transform: translateX(0%);
+    }
+    30%
+    {
+        transform: translateX(-100%);
+    }
+    50%
+    {
+        transform: translateX(-100%);
+    }
+    55% 
+    {
+        transform: translateX(-200%);
+    }
+    75%
+    {
+        transform: translateX(-200%);
+    }
+    80%
+    {
+        transform: translateX(-300%);
+    }
+    100%
+    {
+        transform: translateX(-300%);
+    }
+}
+@media(max-width: 375px){
+.divslide
+{
+    width: 90%;
+}
+.slideshow img 
+{
+    width: 100%;
+}
+}
+
+.standingdeskYouTube
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 250px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+
+}
+.standingdeskYouTube iframe
+{
+    border-radius: 30px;
+    width: 500px;
+    height: 300px;
+    border: solid 0px;
+}
+.DivHealthBenefit
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.posture
+{
+    width: 500px;
+    position: relative;
+
+}
+.posture img
+{
+    margin: auto;
+    display: block;
+    width: 100%;
+    border-radius: 30px;
+}
+.postureText
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.626);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+    padding: 10px;
+    
+}
+.postureText h3
+{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 50px;
+}
+.postureText p 
+{
+    color: white;
+}
+.postureText a 
+{
+    text-decoration: none;
+    color: white;
+}
+.postureText a:hover
+{
+    text-decoration: underline;
+}
+.postureText:hover
+{
+    opacity: 1;
+}
+/* footer */
+footer
+{
+    width: 100%;
+    bottom: 0;
+    background-color: rgb(105, 94, 86);
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    border-top-right-radius: 125px;
+    margin-top: 30px;
+}
+.row
+{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: center;
+}
+.col
+{
+    padding: 20px;
+    width: 250px;
+    justify-content: center;
+}
+.col h3 
+{
+    color: white;
+    margin-bottom: 20px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.col ul li, .col ul li a 
+{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 5px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.col div li :hover
+{
+    text-decoration: underline;
+    transition: 0.15s;
+}
+.col div img
+{
+    width: 45px;
+    margin-right: 20px;
+}
+.col p 
+{
+    margin-bottom: 5px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;   
+}
+.copyright
+{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.copyright p 
+{
+    color: white;
+}
+.col img
+{
+    width: 90px;
+}
+.col div img:hover
+{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.LinkAddToCart
+{
+    width: 250px;
+    height: 45px;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(70, 63, 58);
+}
+.LinkAddToCart :hover
+{
+    opacity: 0.7;
+}
+.LinkAddToCart a 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(248, 248, 248);
+    font-weight: bold;
+    text-decoration: none;
+}
